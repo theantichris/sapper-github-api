@@ -27,7 +27,11 @@ export default {
 				dev,
 				hydratable: true,
 				emitCss: true
-			}),
+      }),
+      babel({
+        extensions: [".js", ".mjs", ".html", ".svelte"],
+        include: ['src/**', 'node_modules/svelte/**']
+      }),
 			resolve({
 				browser: true,
 				dedupe
