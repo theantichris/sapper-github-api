@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte'
+  import User from '../../components/User.svelte'
 
   let users
 
@@ -12,3 +13,11 @@
     users = data
   })
 </script>
+
+{#if users}
+  <ul class="user-list">
+    {#each users as user}
+      <User avatar={ user.avatar_url } username={ user.login } />
+    {/each}
+  </ul>
+{/if}

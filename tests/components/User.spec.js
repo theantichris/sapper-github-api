@@ -2,13 +2,13 @@ import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/svelte'
 import User from '../../src/components/User.svelte'
 
-test('it displays avatar', () => {
+it('displays avatar', () => {
   const { getByAltText } = render(User, { username: 'theantichris', avatar: 'https://image.test' })
 
   expect(getByAltText(`theantichris's avatar`).src).toBe('https://image.test/')
 })
 
-test('it displays username', () => {
+it('displays username', () => {
   const { getByText } = render(User, { username: 'theantichris', avatar: 'https://image.text' })
 
   expect(getByText('theantichris')).toBeInTheDocument()
