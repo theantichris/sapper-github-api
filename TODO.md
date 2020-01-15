@@ -3,3 +3,4 @@
 * add Material UI
 * add Sass
 * i18n
+* linting
