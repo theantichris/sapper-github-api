@@ -6,5 +6,6 @@ test('it shows correct navigation', () => {
   const { getByText } = render(Nav, { segment: '' })
 
   expect(getByText('home')).toBeInTheDocument()
+  expect(getByText('users')).toBeInTheDocument()
   expect(getByText('about')).toBeInTheDocument()
 })

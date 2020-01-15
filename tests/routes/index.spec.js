@@ -5,5 +5,5 @@ import index from '../../src/routes'
 test('it displays correct header', () => {
   const { getByText } = render(index)
 
-  expect(getByText('Great success!')).toBeInTheDocument()
+  expect(getByText('GitHub API')).toBeInTheDocument()
 })
