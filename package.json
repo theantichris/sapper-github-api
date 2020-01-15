@@ -1,6 +1,6 @@
 {
-  "name": "sapper-demo",
-  "description": "playing around with Sapper",
+  "name": "sapper-github-api",
+  "description": "Accessing the GitHub API with Sapper",
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
