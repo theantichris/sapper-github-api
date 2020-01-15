@@ -7,5 +7,4 @@ test('it shows correct navigation', () => {
 
   expect(getByText('home')).toBeInTheDocument()
   expect(getByText('about')).toBeInTheDocument()
-  expect(getByText('blog')).toBeInTheDocument()
 })
