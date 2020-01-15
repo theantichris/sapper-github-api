@@ -1,4 +1,6 @@
 <script>
+  import Card, { Content } from '@smui/card'
+
   export let avatar // TODO: change to avatarUrl
   export let username
 </script>
@@ -8,3 +10,7 @@
 
   <h3>{ username }</h3>
 </div>
+
+<Card>
+  <Content>{ username }</Content>
+</Card>
