@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom/extend-expect'
-import { render, fireEvent, act } from '@testing-library/svelte'
+import { render } from '@testing-library/svelte'
 import Nav from '../../src/components/Nav.svelte'
 
 test('it shows correct navigation', () => {
