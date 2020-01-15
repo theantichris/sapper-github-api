@@ -2,4 +2,4 @@
 
 * add Material UI
 * add Sass
-* add environment variables
+* i18n
